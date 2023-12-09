@@ -1,0 +1,14 @@
+.navbar-brand{
+    padding-right: 40px;
+}
+.btn-outline-primary{
+    margin: 5px;
+    padding-left: 10px;
+}
+.btn-outline-success{
+    margin: 5px;
+    padding-left: 10px;
+}
+.nav-item{
+    padding: 5px;
+}

@@ -1,0 +1,38 @@
+<div class="containers">
+  <div class="main-content">
+    <form [formGroup]="loginForm" class="login-wrapper">
+      <h3 class="title">Sign in</h3>
+
+      <div class="input-group mt-5">
+        <input
+          type="text"
+          placeholder="Username"
+          class="form-control"
+          formControlName="username"
+        />
+      </div>
+
+      <div class="input-group mt-4">
+        <input
+          type="password"
+          placeholder="Password"
+          class="form-control"
+          formControlName="password"
+        />
+      </div>
+
+      <label class="forgetpass mt-3">Forget Password?</label>
+
+      <button
+        type="submit"
+        routerLink="/dashboard"
+        class="btn btn-primary mt-3"
+        [disabled]="loginForm.invalid"
+      >
+        Login
+      </button>
+
+      <label class="signup mt-3">Don’t have an account? Sign up</label>
+    </form>
+  </div>
+</div>

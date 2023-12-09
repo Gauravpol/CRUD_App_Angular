@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap");
+
+
+.main {
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  height: 100%;
+  min-height: 100vh;
+}
+
+input {
+  caret-color: red;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  min-height: auto;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, 14px 14px 20px black;
+}
+
+.brand-title {
+  font-family: "Afacad", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: black;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  margin-left: 80px;
+  color: rgb(0, 0, 0);
+  margin-top: 1px;
+  background: #1da1f2;
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+  font-family: "Afacad", sans-serif;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+label,
+span {
+  font-family: "Afacad", sans-serif;
+}

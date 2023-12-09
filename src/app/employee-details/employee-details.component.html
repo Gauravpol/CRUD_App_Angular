@@ -1,0 +1,29 @@
+<div class="main">
+
+<div class="container txt">
+  <br />
+  <div class="brand-title">Employee Details</div>
+  <br />
+
+  <form>
+    <p *ngIf="listofEmployee">EmployeeId : {{ listofEmployee.employeeId }}</p>
+    <p *ngIf="listofEmployee">First Name : {{ listofEmployee.firstname }}</p>
+    <p *ngIf="listofEmployee">Last Name : {{ listofEmployee.lastname }}</p>
+    <p *ngIf="listofEmployee">Email ID : {{ listofEmployee.email }}</p>
+    <p *ngIf="listofEmployee">Password : {{ listofEmployee.password }}</p>
+    <p *ngIf="listofEmployee">
+      Company Name : {{ listofEmployee.companyName }}
+    </p>
+    <p *ngIf="listofEmployee">Salary: {{ listofEmployee.salary }}</p>
+    <p *ngIf="listofEmployee">
+      Mobile Number : {{ listofEmployee.mobileNumber }}
+    </p>
+
+    <br />
+    <br />
+    <button type="submit" routerLink="/dashboard" class="btn btn-primary">
+       Back
+    </button>
+  </form>
+</div>
+</div>

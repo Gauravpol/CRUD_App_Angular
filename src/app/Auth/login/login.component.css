@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap");
+
+.containers {
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-wrapper {
+  position: relative;
+  height: 500px;
+  width: 360px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 5rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px #cbced1;
+}
+
+.title {
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 1rem;
+  font-family: 'Afacad', sans-serif;
+}
+
+input::placeholder {
+  color: gray;
+  font-family: 'Afacad', sans-serif;
+}
+
+input {
+  margin: 0.7rem 0 0 0;
+  background: #ecf0f3;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  height: 40px;
+  width: 190px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.forgetpass {
+  position: relative;
+  float: right;
+  color: gray;
+  font-family: 'Afacad', sans-serif;
+}
+
+.forgetpass:hover {
+  color: black;
+  text-decoration: underline;
+  font-family: 'Afacad', sans-serif;
+}
+
+.signup {
+  color: gray;
+  font-family: 'Afacad', sans-serif;
+}
+
+.signup:hover {
+  color: black;
+  text-decoration: underline;
+  font-family: 'Afacad', sans-serif;
+}

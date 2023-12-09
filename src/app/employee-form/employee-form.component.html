@@ -1,0 +1,141 @@
+<div class="main">
+<div class="container">
+  <div class="brand-title">Registration Form</div>
+
+  <form [formGroup]="loginForm">
+    <div class="inputs">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          formControlName="firstname"
+          class="form-control"
+          name="firstName"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['firstname'].touched &&
+            loginForm.hasError('required', 'firstname')
+          "
+        >
+          First Name is Required !
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          formControlName="lastname"
+          class="form-control"
+          name="lastName"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['lastname'].touched &&
+            loginForm.hasError('required', 'lastname')
+          "
+        >
+          Last Name is Required !
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          formControlName="email"
+          class="form-control"
+          name="email"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['email'].touched &&
+            loginForm.hasError('required', 'email')
+          "
+        >
+          Email is Required !
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          formControlName="password"
+          class="form-control"
+          name="password"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['password'].touched &&
+            loginForm.hasError('required', 'password')
+          "
+        >
+          password is Required !
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input
+          type="text"
+          formControlName="companyName"
+          class="form-control"
+          name="companyName"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['companyName'].touched &&
+            loginForm.hasError('required', 'companyName')
+          "
+        >
+          Company Name is Required !
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="salary">Salary</label>
+        <input
+          type="number"
+          formControlName="salary"
+          class="form-control"
+          name="salary"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['salary'].touched &&
+            loginForm.hasError('required', 'salary')
+          "
+        >
+          salary is Required !
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="mobileNumber">Mobile Number</label>
+        <input
+          type="tel"
+          formControlName="mobileNumber"
+          class="form-control"
+          name="mobileNumber"
+        />
+        <span
+          class="text-danger"
+          *ngIf="
+            loginForm.controls['mobileNumber'].touched &&
+            loginForm.hasError('required', 'mobileNumber')
+          "
+        >
+          Mobile Number is Required !
+        </span>
+      </div>
+      <br />
+
+      <button (click)="onSubmit()" type="submit" class="btn btn-success btns">
+        {{ OnEdit ? "Update" : "Add" }}
+      </button>
+    </div>
+  </form>
+</div>
+</div>

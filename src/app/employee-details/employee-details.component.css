@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap");
+
+
+.main{
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    height: 100vh;
+ 
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    min-height: auto;
+    border-radius: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 17px 17px 20px #cbced1, 17px 17px 20px #000000;
+    top: 5%;
+  }
+  
+
+.txt{
+    text-align: center;
+}
+
+.brand-title {
+    font-family: "Afacad", sans-serif;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 1px;
+  }
+
+  button,p{
+    font-family: "Afacad", sans-serif;
+  }
+  button{
+    width: 90px;
+  }
